@@ -33,6 +33,7 @@ const About = () => {
       background: 'Former Interview Officer at Selection Centers',
       specialization: 'Personal Interview, Current Affairs, Technical Subjects',
       achievements: 'Trained 200+ successful candidates',
+ image: '/images/murali.png',
       description: 'Colonel Murali brings two decades of experience as an Interview Officer. His deep understanding of the interview process and ability to build candidate confidence has made him one of the most sought-after mentors.',
     },
     {
@@ -42,6 +43,7 @@ const About = () => {
       background: 'Former Psychologist at SSB Centers',
       specialization: 'TAT, WAT, SRT, Psychological Assessment',
       achievements: 'Expert in personality development',
+ image: '/images/rama.png',
       description: 'Colonel Ramakrishnan specializes in psychological assessment and personality development. His structured approach to psychology tests has helped countless candidates understand and present their true potential.',
     },
     {
@@ -51,6 +53,7 @@ const About = () => {
       background: 'Former GTO at Multiple Selection Centers',
       specialization: 'Group Planning, Progressive Group Task, Command Task',
       achievements: 'Highest success rate in GTO preparation',
+ image: '/images/anup.png',
       description: 'Colonel Anup is renowned for his expertise in group testing. His innovative training methods and practical approach to GTO tasks have resulted in exceptional success rates among his students.',
     },
   ];
@@ -155,12 +158,10 @@ const About = () => {
               >
                 <div className="lg:w-1/3 bg-gradient-to-br from-green-600 to-blue-700 p-8 text-white flex flex-col justify-center">
                   <div className="text-center lg:text-left">
-                    <div className="w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4">
-                      <span className="text-3xl font-bold">
-                        {mentor.name.split(' ')[1][0]}
-                      </span>
-                    </div>
-                    <h3 className="text-2xl font-bold mb-2">{mentor.name}</h3>
+ <img src={mentor.image} alt={mentor.name} className="w-24 h-24 rounded-full object-cover mx-auto lg:mx-0 mb-4 border-4 border-white shadow-lg" />
+ <h3 className="text-2xl font-bold mb-2">
+ {mentor.name}
+ </h3>
                     <p className="text-lg font-semibold text-green-100 mb-2">{mentor.role}</p>
                     <p className="text-green-100">{mentor.experience}</p>
                   </div>
