@@ -11,7 +11,7 @@ const Testimonials = () => {
       batch: 'Batch 15 - 2024',
       service: 'Indian Army',
       rating: 5,
-      quote: "Trinity SSB Mentorship transformed my approach to the SSB process. The personalized guidance from Colonel Murali was exceptional. The mock interviews and psychology sessions gave me the confidence I needed to succeed.",
+      quote: "Trinity SSB Mentorship transformed my approach to the SSB process. The personalized guidance from Col Murali was exceptional. The mock interviews and psychology sessions gave me the confidence I needed to succeed.",
       image: null,
       achievement: "Selected for OTA Chennai"
     },
@@ -21,7 +21,7 @@ const Testimonials = () => {
       batch: 'Batch 12 - 2024',
       service: 'Indian Navy',
       rating: 5,
-      quote: "The comprehensive training program covered every aspect of SSB. Colonel Ramakrishnan's psychology sessions were particularly helpful. I felt fully prepared for the actual SSB.",
+      quote: "The comprehensive training program covered every aspect of SSB. Col Ramakrishnan's psychology sessions were particularly helpful. I felt fully prepared for the actual SSB.",
       image: null,
       achievement: "Selected for INS Mandovi"
     },
@@ -31,7 +31,7 @@ const Testimonials = () => {
       batch: 'Batch 18 - 2024',
       service: 'Indian Air Force',
       rating: 5,
-      quote: "The group testing practice with Colonel Anup was invaluable. The mentors' experience and insights made all the difference. Highly recommend to all defence aspirants.",
+      quote: "The group testing practice with Col Anup was invaluable. The mentors' experience and insights made all the difference. Highly recommend to all defence aspirants.",
       image: null,
       achievement: "Selected for Air Force Academy"
     },

@@ -14,7 +14,7 @@ const Batches = () => {
       endDate: 'March 15, 2025',
       duration: '12 Days',
       timing: '6:00 PM - 8:00 PM IST',
-      mentors: ['Colonel Murali', 'Colonel Ramakrishnan'],
+      mentors: ['Col Murali', 'Col Ramakrishnan'],
       seats: 25,
       enrolled: 18,
       price: '₹15,000',
@@ -28,7 +28,7 @@ const Batches = () => {
       endDate: 'April 2, 2025',
       duration: '12 Days',
       timing: '7:00 PM - 9:00 PM IST',
-      mentors: ['Colonel Anup', 'Colonel Ramakrishnan'],
+      mentors: ['Col Anup', 'Col Ramakrishnan'],
       seats: 20,
       enrolled: 12,
       price: '₹18,000',
@@ -42,7 +42,7 @@ const Batches = () => {
       endDate: 'April 18, 2025',
       duration: '12 Days',
       timing: '6:30 PM - 8:30 PM IST',
-      mentors: ['Colonel Murali', 'Colonel Anup', 'Colonel Ramakrishnan'],
+      mentors: ['Col Murali', 'Col Anup', 'Col Ramakrishnan'],
       seats: 30,
       enrolled: 8,
       price: '₹20,000',
@@ -56,7 +56,7 @@ const Batches = () => {
       endDate: 'May 8, 2025',
       duration: '12 Days',
       timing: '5:30 PM - 7:30 PM IST',
-      mentors: ['Colonel Murali'],
+      mentors: ['Col Murali'],
       seats: 15,
       enrolled: 15,
       price: '₹12,000',
@@ -70,7 +70,7 @@ const Batches = () => {
       endDate: 'May 23, 2025',
       duration: '12 Days',
       timing: '7:00 PM - 9:00 PM IST',
-      mentors: ['Colonel Ramakrishnan'],
+      mentors: ['Col Ramakrishnan'],
       seats: 20,
       enrolled: 3,
       price: '₹14,000',
@@ -84,7 +84,7 @@ const Batches = () => {
       endDate: 'June 10, 2025',
       duration: '12 Days',
       timing: '6:00 PM - 8:00 PM IST',
-      mentors: ['Colonel Anup'],
+      mentors: ['Col Anup'],
       seats: 25,
       enrolled: 5,
       price: '₹16,000',
@@ -94,7 +94,7 @@ const Batches = () => {
   ];
 
   const months = ['All', 'March', 'April', 'May'];
-  const mentors = ['All', 'Colonel Murali', 'Colonel Ramakrishnan', 'Colonel Anup'];
+  const mentors = ['All', 'Col Murali', 'Col Ramakrishnan', 'Col Anup'];
 
   const filteredBatches = batches.filter(batch => {
     const monthMatch = selectedMonth === 'All' || batch.month === selectedMonth;

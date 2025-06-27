@@ -1,28 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Users, Clock, Award, Star, CheckCircle } from 'lucide-react';
+import { ArrowRight, Users, Wallet, Clock, Award, Star, CheckCircle, icons } from 'lucide-react';
 
 const Home = () => {
   const features = [
     {
       icon: Clock,
-      title: '12-Day Flexible Sessions',
-      description: 'Comprehensive online training program designed to fit your schedule',
+      title: '12-Day Flexible Session',
+      description: 'Comprehensive online and offline (optional) training program with flexible timings as per the convenience of candidates',
     },
     {
       icon: Users,
       title: 'One-on-One Mentoring',
-      description: 'Personal guidance from qualified veteran assessors',
+      description: 'Personalised guidance, assessment, debrief, and feedback by GTO, IO, and PSYCH',
     },
     {
       icon: Award,
       title: 'Complete SSB Preparation',
-      description: 'Psychology, Interview, and Group Testing preparation',
+      description: 'Preparation and conduct of mock tests for Stage 1 (OIR & PP&DT), Psychological Tests (4 tests), Interview (One-on-One), and Group Testing (9 tests)',
     },
+    
     {
-      icon: Star,
-      title: 'Proven Track Record',
-      description: '500+ successful candidates trained by our expert team',
+      icon: Wallet,
+      title: 'One Time Payment',
+      description: 'Can attend multiple batches with payment for one batch',
     },
   ];
 
@@ -33,12 +34,12 @@ const Home = () => {
   ];
 
   const highlights = [
-    'Stage 1 & Stage 2 Focused Training',
-    'Personalized Feedback Sessions',
-    'Mock Interviews & Group Discussions',
-    'Psychological Test Preparation',
-    'Confidence Building Exercises',
-    'Career Guidance & Counseling',
+    'Introduction to SSB & Personality Assessment',
+    'Familiarization of schedule at SSB',
+    'Stage 1 (OIR & PP&DT) training and mock tests',
+    'Psychological Test Preparation & Mock Tests',
+    'Group Testing Preparation & Mock Tests',
+    'Interview Technique & Mock Interviews',
   ];
 
   return (
@@ -78,10 +79,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Trinity SSB?
+              Why Choose Trinity SSB Mentorship?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Comprehensive preparation program designed by veterans for future officers
+              Comprehensive preparation program for SSB preparation and personality development curated and executed by qualified veteran assessors
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -110,8 +111,8 @@ const Home = () => {
                 Comprehensive SSB Training Program
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Our structured approach ensures complete preparation for all stages of the 
-                Services Selection Board process, from screening to final interview.
+                Our structured approach ensures complete preparation for all stages and all threetypes of assessment (GTO, PSYCH & IO) of the 
+                Services Selection Board process, from screening to final conference procedure.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {highlights.map((highlight, index) => (
@@ -133,12 +134,12 @@ const Home = () => {
               <h3 className="text-2xl font-bold mb-6">Program Statistics</h3>
               <div className="space-y-6">
                 <div className="flex justify-between items-center">
-                  <span>Students Trained</span>
-                  <span className="text-2xl font-bold">500+</span>
+                  <span>Batches Completed</span>
+                  <span className="text-2xl font-bold">5 Batches</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span>Success Rate</span>
-                  <span className="text-2xl font-bold">85%</span>
+                  <span className="text-2xl font-bold">20%</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span>Veteran Instructors</span>
@@ -146,7 +147,7 @@ const Home = () => {
                 </div>
                 <div className="flex justify-between items-center">
                   <span>Years of Experience</span>
-                  <span className="text-2xl font-bold">60+</span>
+                  <span className="text-2xl font-bold">30+</span>
                 </div>
               </div>
             </div>
@@ -162,7 +163,7 @@ const Home = () => {
               Meet Your Mentors
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Learn from experienced veterans who have served in the Selection Board process
+              Learn from experienced Veteran Personality Assessors who have served in the Services Selection Boards
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

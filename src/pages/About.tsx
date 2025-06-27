@@ -27,34 +27,34 @@ const About = () => {
 
   const mentors = [
     {
-      name: 'Colonel Murali',
+      name: 'Col Murali',
       role: 'Interview Officer (IO)',
       experience: '20+ Years',
       background: 'Former Interview Officer at Selection Centers',
       specialization: 'Personal Interview, Current Affairs, Technical Subjects',
       achievements: 'Trained 200+ successful candidates',
  image: '/images/murali.png',
-      description: 'Colonel Murali brings two decades of experience as an Interview Officer. His deep understanding of the interview process and ability to build candidate confidence has made him one of the most sought-after mentors.',
+      description: 'Col Murali brings two decades of experience as an Interview Officer. His deep understanding of the interview process and ability to build candidate confidence has made him one of the most sought-after mentors.',
     },
     {
-      name: 'Colonel Ramakrishnan',
+      name: 'Col Ramakrishnan',
       role: 'Psychologist (PSYCH)',
       experience: '18+ Years',
       background: 'Former Psychologist at SSB Centers',
       specialization: 'TAT, WAT, SRT, Psychological Assessment',
       achievements: 'Expert in personality development',
  image: '/images/rama.png',
-      description: 'Colonel Ramakrishnan specializes in psychological assessment and personality development. His structured approach to psychology tests has helped countless candidates understand and present their true potential.',
+      description: 'Col Ramakrishnan specializes in psychological assessment and personality development. His structured approach to psychology tests has helped countless candidates understand and present their true potential.',
     },
     {
-      name: 'Colonel Anup',
+      name: 'Col Anup',
       role: 'Group Testing Officer (GTO)',
       experience: '22+ Years',
       background: 'Former GTO at Multiple Selection Centers',
       specialization: 'Group Planning, Progressive Group Task, Command Task',
       achievements: 'Highest success rate in GTO preparation',
  image: '/images/anup.png',
-      description: 'Colonel Anup is renowned for his expertise in group testing. His innovative training methods and practical approach to GTO tasks have resulted in exceptional success rates among his students.',
+      description: 'Col Anup is renowned for his expertise in group testing. His innovative training methods and practical approach to GTO tasks have resulted in exceptional success rates among his students.',
     },
   ];
 
@@ -82,14 +82,15 @@ const About = () => {
   ];
 
   const program = [
-    'Comprehensive personality assessment and development',
-    'Stage 1 preparation: Officer Intelligence Rating Tests',
-    'Stage 2 preparation: Psychology, GTO, and Interview',
-    'Mock SSB sessions with real-time feedback',
-    'Personal grooming and communication skills',
-    'Current affairs and general knowledge enhancement',
-    'Stress management and confidence building',
-    'Post-SSB career guidance and support',
+    'Introduction to SSB & Personality Assessment',
+    'Familiarization of schedule at SSB',
+    'Stage 1 (OIR & PP&DT) training and mock tests',
+    'Psychological Test Preparation & Mock Tests',
+    'Group Testing Preparation & Mock Tests',
+    'Interview Technique & Mock Interviews',
+    'Personality Development & Confidence Building Exercises',
+    'Personalised Feedback',
+    'Interactions with assessors 24x7 on a one-on-one basis',
   ];
 
   return (
@@ -100,7 +101,7 @@ const About = () => {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">About Trinity SSB Mentorship</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Empowering defence aspirants with expert guidance from veteran assessors who have served 
-            in the Services Selection Board process
+            in the Services Selection Boards
           </p>
         </div>
 
@@ -109,8 +110,8 @@ const About = () => {
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
             <p className="text-xl leading-relaxed max-w-4xl mx-auto">
-              To provide comprehensive, professional, and personalized SSB preparation that transforms 
-              aspirants into confident candidates ready to serve the nation. We bridge the gap between 
+              To provide comprehensive, professional and personalized SSB preparation that transforms 
+              aspirants into confident candidates ready to clear the SSB and serve the nation. We bridge the gap between 
               aspiration and achievement through expert mentorship and proven training methodologies.
             </p>
           </div>
@@ -208,11 +209,11 @@ const About = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Program Statistics</h3>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-600 mb-2">500+</div>
+                  <div className="text-3xl font-bold text-green-600 mb-2">50+</div>
                   <div className="text-gray-600">Students Trained</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">85%</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">20%</div>
                   <div className="text-gray-600">Success Rate</div>
                 </div>
                 <div className="text-center">
@@ -220,7 +221,7 @@ const About = () => {
                   <div className="text-gray-600">Day Program</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600 mb-2">60+</div>
+                  <div className="text-3xl font-bold text-red-600 mb-2">30+</div>
                   <div className="text-gray-600">Years Experience</div>
                 </div>
               </div>
