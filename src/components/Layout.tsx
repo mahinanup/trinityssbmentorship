@@ -112,7 +112,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             {/* Logo and Description */}
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-3 mb-4 text-white">
-              <img src="/src/images/logo.png" alt="Trinity SSB Mentorship Logo" className="h-12 w-auto rounded-lg"/>
+              <img src="/images/logo.png" alt="Trinity SSB Mentorship Logo" className="h-12 w-auto rounded-lg"/>
                 <div>
                   <h2 className="text-xl font-bold">Trinity SSB Mentorship</h2>
                   <p className="text-gray-400">Your Gateway to Defence Forces</p>
