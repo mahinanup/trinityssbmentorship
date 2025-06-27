@@ -88,85 +88,83 @@ const Enroll = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Enrollment Form */}
-          <div className="lg:col-span-2">
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Student Information</h2>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Personal Information */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      <User className="h-4 w-4 inline mr-2" />
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="fullName"
-                      value={formData.fullName}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                      placeholder="Enter your full name"
-                    />
-                  </div>
+        <div className="max-w-xl mx-auto">
+ <div className="bg-white rounded-xl shadow-lg p-8">
+ <h2 className="text-2xl font-bold text-gray-900 mb-6">Student Information</h2>
 
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      <Mail className="h-4 w-4 inline mr-2" />
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                      placeholder="Enter your email"
-                    />
-                  </div>
-                </div>
+ <form onSubmit={handleSubmit} className="space-y-6">
+ {/* Personal Information */}
+ <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+ <div>
+ <label className="block text-sm font-medium text-gray-700 mb-2">
+ <User className="h-4 w-4 inline mr-2" />
+ Full Name *
+ </label>
+ <input
+ type="text"
+ name="fullName"
+ value={formData.fullName}
+ onChange={handleInputChange}
+ required
+ className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+ placeholder="Enter your full name"
+ />
+ </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      <Phone className="h-4 w-4 inline mr-2" />
+ <div>
+ <label className="block text-sm font-medium text-gray-700 mb-2">
+ <Mail className="h-4 w-4 inline mr-2" />
+ Email Address *
+ </label>
+ <input
+ type="email"
+ name="email"
+ value={formData.email}
+ onChange={handleInputChange}
+ required
+ className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+ placeholder="Enter your email"
+ />
+ </div>
+ </div>
+
+ <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+ <div>
+ <label className="block text-sm font-medium text-gray-700 mb-2">
+ <Phone className="h-4 w-4 inline mr-2" />
                       Phone Number *
-                    </label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                      placeholder="+91 9876543210"
-                    />
-                  </div>
+ </label>
+ <input
+ type="tel"
+ name="phone"
+ value={formData.phone}
+ onChange={handleInputChange}
+ required
+ className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+ placeholder="+91 9876543210"
+ />
+ </div>
 
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      <GraduationCap className="h-4 w-4 inline mr-2" />
+ <div>
+ <label className="block text-sm font-medium text-gray-700 mb-2">
+ <GraduationCap className="h-4 w-4 inline mr-2" />
                       Educational Background *
-                    </label>
-                    <select
-                      name="education"
-                      value={formData.education}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                    >
-                      <option value="">Select your education</option>
-                      <option value="12th">12th Pass</option>
-                      <option value="graduation">Graduation</option>
-                      <option value="post-graduation">Post Graduation</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                </div>
+ </label>
+ <select
+ name="education"
+ value={formData.education}
+ onChange={handleInputChange}
+ required
+ className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+ >
+ <option value="">Select your education</option>
+ <option value="12th">12th Pass</option>
+ <option value="graduation">Graduation</option>
+ <option value="post-graduation">Post Graduation</option>
+ <option value="other">Other</option>
+ </select>
+ </div>
+ </div>
 
                 {/* Batch Selection */}
                 <div>
@@ -232,53 +230,7 @@ const Enroll = () => {
                 </button>
               </form>
             </div>
-          </div>
-
-          {/* Summary Sidebar */}
-          <div className="lg:col-span-1">
-            <div className="bg-white rounded-xl shadow-lg p-6 sticky top-24">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Enrollment Summary</h3>
-              
-              {selectedBatchInfo ? (
-                <div className="space-y-4">
-                  <div className="bg-gradient-to-r from-green-50 to-blue-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-gray-900 mb-2">{selectedBatchInfo.title}</h4>
-                    <p className="text-sm text-gray-600 mb-2">{selectedBatchInfo.dates}</p>
-                    <p className="text-2xl font-bold text-green-600">{selectedBatchInfo.price}</p>
-                  </div>
-                  <div className="border-t pt-4">
-                    <h5 className="font-semibold text-gray-900 mb-2">What's Included:</h5>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      <li>✓ 12-day structured program</li>
-                      <li>✓ Personal mentoring sessions</li>
-                      <li>✓ Mock interviews</li>
-                      <li>✓ Psychology test prep</li>
-                      <li>✓ Group testing practice</li>
-                      <li>✓ Study materials</li>
-                    </ul>
-                  </div>
-                </div>
-              ) : (
-                <p className="text-gray-500 text-center py-8">Select a batch to see details</p>
-              )}
-
-              <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-                <div className="flex items-center space-x-2 mb-2">
-                  <CreditCard className="h-4 w-4 text-yellow-600" />
-                  <span className="font-semibold text-yellow-800">Payment Information</span>
-                </div>
-                <p className="text-sm text-yellow-700">
-                  After enrollment, you'll receive payment instructions via email and SMS.
-                  We accept UPI, Net Banking, and Card payments.
-                </p>
-              </div>
-
-              <div className="mt-4 text-center text-sm text-gray-500">
-                <p>🔒 Your information is secure and confidential</p>
-              </div>
-            </div>
-          </div>
-        </div>
+ </div>
       </div>
     </div>
   );
