@@ -27,9 +27,9 @@ const Home = () => {
   ];
 
   const mentors = [
-    { name: 'Col G Murali', role: 'Interview Officer (IO)', image: '/src/images/murali.png' },
-    { name: 'Col Ramakrishnan UK', role: 'Psychologist (PSYCH)',  image: '/src/images/rama.png' },
-    { name: 'Col Anup Alagarajan', role: 'Group Testing Officer (GTO)', image: '/src/images/anup.png' },
+    { name: 'Col G Murali', role: 'Interview Officer (IO)', image: '/images/murali.png' },
+    { name: 'Col Ramakrishnan UK', role: 'Psychologist (PSYCH)',  image: '/images/rama.png' },
+    { name: 'Col Anup Alagarajan', role: 'Group Testing Officer (GTO)', image: '/images/anup.png' },
   ];
 
   const highlights = [
@@ -44,7 +44,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative text-white bg-cover bg-center" style={{ backgroundImage: 'url(/src/images/backdrop2.png)' }}>
+      <section className="relative text-white bg-cover bg-center" style={{ backgroundImage: 'url(/images/backdrop2.png)' }}>
         <div className="absolute inset-0 bg-black opacity-55"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">

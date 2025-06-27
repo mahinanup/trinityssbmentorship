@@ -28,7 +28,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
-              <img src="/src/images/logo.png" alt="Trinity SSB Mentorship Logo" className="h-12 w-auto rounded-lg"/>
+              <img src="/images/logo.png" alt="Trinity SSB Mentorship Logo" className="h-12 w-auto rounded-lg"/>
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Trinity SSB</h1>
                 <p className="text-sm text-gray-600">Mentorship</p>
