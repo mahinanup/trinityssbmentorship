@@ -17,12 +17,7 @@ const Enroll = () => {
   });
 
   const batches = [
-    { id: '1', title: 'Batch 1 - Foundation Course', price: '₹15,000', dates: 'March 2-15, 2025' },
-    { id: '2', title: 'Batch 2 - Advanced Preparation', price: '₹18,000', dates: 'March 20 - April 2, 2025' },
-    { id: '3', title: 'Batch 3 - Comprehensive Course', price: '₹20,000', dates: 'April 5-18, 2025' },
-    { id: '4', title: 'Batch 4 - Interview Mastery', price: '₹12,000', dates: 'April 25 - May 8, 2025' },
-    { id: '5', title: 'Batch 5 - Psychology Focus', price: '₹14,000', dates: 'May 10-23, 2025' },
-    { id: '6', title: 'Batch 6 - Group Testing Excellence', price: '₹16,000', dates: 'May 28 - June 10, 2025' },
+ { id: '6', title: 'Batch 6 - Full SSB Prep', price: '₹8,000', dates: 'July 2025' },
   ];
 
   useEffect(() => {
@@ -180,7 +175,7 @@ const Enroll = () => {
                   >
                     <option value="">Choose a batch</option>
                     {batches.map(batch => (
-                      <option key={batch.id} value={batch.id}>
+ <option key={batch.id} value={batch.id}>
                         {batch.title} - {batch.dates} ({batch.price})
                       </option>
                     ))}
