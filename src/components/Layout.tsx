@@ -119,12 +119,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 </div>
               </div>
               <p className="text-gray-400 mb-4">
-                Training for Services Selection Board by Qualified Veteran Assessors. 
-                12-day flexible online sessions with personalized mentoring.
+              Empowering defence aspirants with expert guidance from veteran assessors who have served 
+              in the Services Selection Boards
               </p>
-              <div className="text-sm text-gray-400">
-                <p>500+ Students Trained • Veteran Instructors • Proven Results</p>
-              </div>
+              
             </div>
 
             {/* Quick Links */}
