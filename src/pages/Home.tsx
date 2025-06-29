@@ -82,7 +82,7 @@ const Home = () => {
               Why Choose Trinity SSB Mentorship?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Comprehensive preparation program for SSB preparation and personality development curated and executed by qualified veteran assessors
+              Comprehensive program for SSB preparation and personality development curated and executed by qualified veteran assessors
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -111,7 +111,7 @@ const Home = () => {
                 Comprehensive SSB Training Program
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Our structured approach ensures complete preparation for all stages and all threetypes of assessment (GTO, PSYCH & IO) of the 
+                Our structured approach ensures complete preparation for all stages and all three types of assessment (GTO, PSYCH & IO) of the 
                 Services Selection Board process, from screening to final conference procedure.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

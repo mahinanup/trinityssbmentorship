@@ -47,14 +47,14 @@ const About = () => {
       description: 'Col Ramakrishnan specializes in psychological assessment and personality development. His structured approach to psychology tests has helped countless candidates understand and present their true potential.',
     },
     {
-      name: 'Col Anup',
+      name: 'Col Anup Alagarajan',
       role: 'Group Testing Officer (GTO)',
-      experience: '22+ Years',
-      background: 'Former GTO at Multiple Selection Centers',
-      specialization: 'Group Planning, Progressive Group Task, Command Task',
-      achievements: 'Highest success rate in GTO preparation',
+      experience: '34+ Years',
+      background: 'A native of Palakkad, Kerala he is an alumnus of Sainik School Kazhakootam (1988) and the National Defence Academy (78 Hunter, joined 1987). Commissioned into the Corps of EME on 8 June 1991, he holds an M.Tech in Mechanical Engineering, an MBA in HRM, PGDM in Finance, and certifications in Strategic Management and Project Management from IISc Bangalore. A specialist in Armoured and Off-Highway Vehicles, he served extensively in EME units across diverse terrains, focusing on equipment sustenance and maintainability. He is also a qualified personality assessment expert from DIPR and served as a GTO at SSB, assessing over 4,000 candidates. Awarded the COAS Commendation in 2015 for excellence as Director EME Training. He superannuated on 31 July 2024 as Chief Maintainability Engineer, Maintainability Advisory Group No. 6, Avadi.',
+      specialization: 'Group Testing Officer, Design & Development of Group Planning Exercise, Progressive Group Task, and Command Task',
+      achievements: 'Highest success rate in coaching candidates for SSB preparation',
  image: '/images/anup.png',
-      description: 'Col Anup is renowned for his expertise in group testing. His innovative training methods and practical approach to GTO tasks have resulted in exceptional success rates among his students.',
+      description: 'Col Anup Alagarajan is renowned for his expertise in group testing & personality development. His innovative training methods and practical approach to GTO tasks have resulted in exceptional success rates among his students.',
     },
   ];
 
@@ -67,7 +67,7 @@ const About = () => {
     {
       icon: Target,
       title: 'Discipline',
-      description: 'Structured approach to skill development',
+      description: 'Structured approach to personality development',
     },
     {
       icon: Star,
@@ -90,7 +90,7 @@ const About = () => {
     'Interview Technique & Mock Interviews',
     'Personality Development & Confidence Building Exercises',
     'Personalised Feedback',
-    'Interactions with assessors 24x7 on a one-on-one basis',
+    'Interaction with assessors 24x7 on one-on-one basis',
   ];
 
   return (
