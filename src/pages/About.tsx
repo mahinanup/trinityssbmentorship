@@ -29,8 +29,8 @@ const About = () => {
     {
       name: 'Col Murali',
       role: 'Interview Officer (IO)',
-      experience: '20+ Years',
-      background: 'Former Interview Officer at Selection Centers',
+      experience: '29+ Years',
+      background: 'Col G Murali (Retd) is a decorated retired Army officer from the Regiment of Artillery and an alumnus of the National Defence Academy and Indian Military Academy. Over his 29-year career, he commanded Artillery Regiments in J&K and Rajasthan and participated in key operations including Op Meghdoot (Siachen) and Op Vijay (Kargil), earning the Chief of Army Staff Commendation for distinguished service. A trained Interviewing Officer from DIPR, he served as Deputy President of 18 SSB, Allahabad, conducting over 2,000 interviews and selecting more than 320 potential officers. Since taking voluntary retirement in 2013, he has actively mentored and trained defence aspirants. He holds postgraduate degrees in Weapon Systems, Social Work, and an MBA in HR.',
       specialization: 'Personal Interview, Current Affairs, Technical Subjects',
       achievements: 'Trained 200+ successful candidates',
  image: '/images/murali.png',
