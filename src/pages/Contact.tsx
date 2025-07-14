@@ -39,19 +39,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone Numbers',
-      details: ['+91 9876543210', '+91 8765432109'],
+      details: ['+91 9952577722', '+91 6380041087', '+91 9910422331'],
       action: 'Call Now',
-    },
-    {
-      icon: MessageSquare,
-      title: 'WhatsApp',
-      details: ['+91 9876543210', '+91 8765432109'],
-      action: 'Chat Now',
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@trinityssb.com', 'admissions@trinityssb.com'],
+      details: ['trinityssbmentor@gmail.com'],
       action: 'Send Email',
     },
     {
@@ -127,20 +121,12 @@ const Contact = () => {
               <div className="mt-8 space-y-3">
                 <h3 className="font-semibold mb-4">Quick Contact</h3>
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919952577722"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-lg font-semibold text-center transition-colors duration-200"
                 >
-                  WhatsApp: Admissions
-                </a>
-                <a
-                  href="https://wa.me/918765432109"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold text-center transition-colors duration-200"
-                >
-                  WhatsApp: Support
+                  WhatsApp
                 </a>
               </div>
             </div>

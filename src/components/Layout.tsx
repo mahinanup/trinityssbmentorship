@@ -145,11 +145,19 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <div className="space-y-2">
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4 text-green-400" />
-                  <span className="text-gray-400">+91 9876543210</span>
+                  <span className="text-gray-400">+91 9952577722</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Phone className="h-4 w-4 text-green-400" />
+                  <span className="text-gray-400">+91 9910422331</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Phone className="h-4 w-4 text-green-400" />
+                  <span className="text-gray-400">+91 6380041087</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-green-400" />
-                  <span className="text-gray-400">info@trinityssb.com</span>
+                  <span className="text-gray-400">trinityssbmentor@gmail.com</span>
                 </div>
               </div>
             </div>
