@@ -27,7 +27,7 @@ const About = () => {
 
   const mentors = [
     {
-      name: 'Col Murali',
+      name: 'Col G Murali',
       role: 'Interview Officer (IO)',
       experience: '29+ Years',
       background: 'Col G Murali (Retd) is a decorated retired Army officer from the Regiment of Artillery and an alumnus of the National Defence Academy and Indian Military Academy. Over his 29-year career, he commanded Artillery Regiments in J&K and Rajasthan and participated in key operations including Op Meghdoot (Siachen) and Op Vijay (Kargil), earning the Chief of Army Staff Commendation for distinguished service. A trained Interviewing Officer from DIPR, he served as Deputy President of 18 SSB, Allahabad, conducting over 2,000 interviews and selecting more than 320 potential officers. Since taking voluntary retirement in 2013, he has actively mentored and trained defence aspirants. He holds postgraduate degrees in Weapon Systems, Social Work, and an MBA in HR.',
@@ -37,10 +37,10 @@ const About = () => {
       description: 'Col Murali brings two decades of experience as an Interview Officer. His deep understanding of the interview process and ability to build candidate confidence has made him one of the most sought-after mentors.',
     },
     {
-      name: 'Col Ramakrishnan',
+      name: 'Col Ramakrishnan UK',
       role: 'Psychologist (PSYCH)',
-      experience: '18+ Years',
-      background: 'Former Psychologist at SSB Centers',
+      experience: '30+ Years',
+      background: "Col Ramakrishnan is a retired Army officer from the Army Educational Corps and an alumnus of the Indian Military Academy, Dehradun. He served in various field formations and held key instructional roles at IMA Dehradun, INI Pune, AETC Pachmarhi, and ASC Centre & College, Bengaluru. A trained psychologist from the Defence Institute of Psychological Research, he served as Technical Officer and Psychologist at 18 SSB Prayagraj, where he assessed over 1,500 candidates and contributed to the selection of 300+ future officers. Since retiring in 2019 after 30+ years of service, he has actively mentored and trained numerous defence aspirants. He holds a postgraduate degree in Applied Psychology and a bachelor's in Educational Technology.",
       specialization: 'TAT, WAT, SRT, Psychological Assessment',
       achievements: 'Expert in personality development',
  image: '/images/rama.png',
