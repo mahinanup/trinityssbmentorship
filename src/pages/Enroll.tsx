@@ -6,6 +6,8 @@ const Enroll = () => {
   const [searchParams] = useSearchParams();
   const [selectedBatch, setSelectedBatch] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -38,12 +40,92 @@ const Enroll = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the data to your backend
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
+    setIsLoading(true);
+    setIsSuccess(false);
+    const selectedBatchDetails = batches.find(batch => batch.id === formData.batch);
+    const batchInfo = selectedBatchDetails ? `${selectedBatchDetails.title} - ${selectedBatchDetails.dates}` : 'N/A';
+    const message = `Enrollment details: Full Name: ${formData.fullName}, Email: ${formData.email}, Phone: ${formData.phone}, Education: ${formData.education}, Batch: ${batchInfo}, Experience: ${formData.experience}, Motivation: ${formData.motivation}`;
+
+    // Replace with your Azure Function URL
+    const azureFunctionUrl = "https://commsservice-b6crf3bwdjghcfcz.canadacentral-01.azurewebsites.net/api/azureCommsService?code=asG2_G2QFx0oKib1q41lJ2P9JVNbfidbgewlJDXuLNo0AzFul_LHTA==";
+
+    fetch(azureFunctionUrl, { // Keep the fetch call
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: "mahinanup1862@gmail.com", // Use the static email as requested
+        Message: message,
+      }),
+    })
+      .then(() => { // No need to catch the response, just confirm it was sent
+        setIsLoading(false);
+        setIsSuccess(true);
+      })
+      .catch(error => {
+        console.error('Error sending data to Azure Function:', error);
+        setIsLoading(false);
+        // Optionally, handle the error state as well, though not requested
+      });
   };
 
   const selectedBatchInfo = batches.find(batch => batch.id === formData.batch);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gray-50 py-12 flex items-center justify-center">
+        <div className="max-w-md mx-auto bg-white rounded-xl shadow-lg p-8 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Sending Enrollment...</h2>
+          {/* You can add a loading spinner here if you have one */}
+          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 border-solid mx-auto"></div>
+        </div>
+      </div>
+    );
+  }
+
+  if (isSuccess) { // Render success message after loading
+    return (
+      <div className="min-h-screen bg-gray-50 py-12 flex items-center justify-center">
+        <div className="max-w-md mx-auto bg-white rounded-xl shadow-lg p-8 text-center">
+          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <CheckCircle className="h-8 w-8 text-green-600" />
+          </div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Enrollment Sent Successfully!</h2>
+          <p className="text-gray-600 mb-6">
+            Thank you for enrolling. We'll contact you within 24 hours with payment instructions and program details.
+          </p>
+          {/* Optionally, show batch details here again */}
+          {selectedBatchInfo && (
+            <div className="bg-gray-50 rounded-lg p-4 mb-6">
+              <h3 className="font-semibold text-gray-900 mb-2">Selected Batch:</h3>
+              <p className="text-gray-700">{selectedBatchInfo.title}</p>
+              <p className="text-sm text-gray-600">{selectedBatchInfo.dates}</p>
+            </div>
+          )}
+          <button
+            onClick={() => {
+              setIsSuccess(false);
+              // Reset form or redirect as needed
+              setFormData({
+                fullName: '',
+                email: '',
+                phone: '',
+                education: '',
+                batch: '',
+                experience: '',
+                motivation: '',
+              });
+              setSelectedBatch('');
+            }}
+            className="w-full bg-gradient-to-r from-green-600 to-blue-700 text-white py-3 rounded-lg font-semibold hover:from-green-700 hover:to-blue-800 transition-all duration-200"
+          >
+            Enroll Another Student
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   if (isSubmitted) {
     return (
