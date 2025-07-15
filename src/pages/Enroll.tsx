@@ -55,7 +55,7 @@ const Enroll = () => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        email: "mahinanup1862@gmail.com", // Use the static email as requested
+        email: "trinityssbmentor@gmail.com", // Use the static email as requested
         Message: message,
       }),
     })
