@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { User, Mail, Phone, GraduationCap, CreditCard, CheckCircle } from 'lucide-react';
+import { batches } from '../data/batches';
 
 const Enroll = () => {
   const [searchParams] = useSearchParams();
@@ -17,10 +18,6 @@ const Enroll = () => {
     experience: '',
     motivation: '',
   });
-
-  const batches = [
- { id: '6', title: 'Batch 6 - Full SSB Prep', price: '₹8,000', dates: 'July 2025' },
-  ];
 
   useEffect(() => {
     const batchId = searchParams.get('batch');
@@ -42,8 +39,8 @@ const Enroll = () => {
     e.preventDefault();
     setIsLoading(true);
     setIsSuccess(false);
-    const selectedBatchDetails = batches.find(batch => batch.id === formData.batch);
-    const batchInfo = selectedBatchDetails ? `${selectedBatchDetails.title} - ${selectedBatchDetails.dates}` : 'N/A';
+    const selectedBatchDetails = batches.find(batch => batch.id.toString() === formData.batch);
+    const batchInfo = selectedBatchDetails ? `${selectedBatchDetails.title} - ${selectedBatchDetails.month} ${new Date(selectedBatchDetails.startDate).getFullYear()}` : 'N/A';
     const message = `Enrollment details: Full Name: ${formData.fullName}, Email: ${formData.email}, Phone: ${formData.phone}, Education: ${formData.education}, Batch: ${batchInfo}, Experience: ${formData.experience}, Motivation: ${formData.motivation}`;
 
     // Replace with your Azure Function URL
@@ -70,7 +67,7 @@ const Enroll = () => {
       });
   };
 
-  const selectedBatchInfo = batches.find(batch => batch.id === formData.batch);
+  const selectedBatchInfo = batches.find(batch => batch.id.toString() === formData.batch);
 
   if (isLoading) {
     return (
@@ -100,7 +97,7 @@ const Enroll = () => {
             <div className="bg-gray-50 rounded-lg p-4 mb-6">
               <h3 className="font-semibold text-gray-900 mb-2">Selected Batch:</h3>
               <p className="text-gray-700">{selectedBatchInfo.title}</p>
-              <p className="text-sm text-gray-600">{selectedBatchInfo.dates}</p>
+              <p className="text-sm text-gray-600">{selectedBatchInfo.month} {new Date(selectedBatchInfo.startDate).getFullYear()}</p>
             </div>
           )}
           <button
@@ -141,7 +138,7 @@ const Enroll = () => {
           <div className="bg-gray-50 rounded-lg p-4 mb-6">
             <h3 className="font-semibold text-gray-900 mb-2">Selected Batch:</h3>
             <p className="text-gray-700">{selectedBatchInfo?.title}</p>
-            <p className="text-sm text-gray-600">{selectedBatchInfo?.dates}</p>
+            <p className="text-sm text-gray-600">{selectedBatchInfo?.month} {new Date(selectedBatchInfo.startDate).getFullYear()}</p>
           </div>
           <button
             onClick={() => setIsSubmitted(false)}
@@ -256,9 +253,9 @@ const Enroll = () => {
                     className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                   >
                     <option value="">Choose a batch</option>
-                    {batches.map(batch => (
+                    {batches.filter(batch => batch.status === 'Open').map(batch => (
  <option key={batch.id} value={batch.id}>
-                        {batch.title} - {batch.dates} ({batch.price})
+                        {batch.title} - {batch.month} {new Date(batch.startDate).getFullYear()} ({batch.price})
                       </option>
                     ))}
                   </select>
