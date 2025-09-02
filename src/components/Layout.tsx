@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Shield, Phone, Mail } from 'lucide-react';
+import { Menu, X, Shield, Phone, Mail, Instagram } from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -157,6 +157,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-green-400" />
                   <span className="text-gray-400">trinityssbmentor@gmail.com</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Instagram className="h-4 w-4 text-green-400" />
+                  <a href="https://www.instagram.com/trinityssbmentorship?igsh=MTlocTA5am50am5uaA==" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">Instagram</a>
                 </div>
               </div>
             </div>
