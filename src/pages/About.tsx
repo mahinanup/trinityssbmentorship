@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Shield, Target, Users, Award, CheckCircle, Star, Medal, Clock } from 'lucide-react';
 
 const About = () => {
@@ -33,7 +34,7 @@ const About = () => {
       background: 'Col G Murali (Retd) is a decorated retired Army officer from the Regiment of Artillery and an alumnus of the National Defence Academy and Indian Military Academy. Over his 29-year career, he commanded Artillery Regiments in J&K and Rajasthan and participated in key operations including Op Meghdoot (Siachen) and Op Vijay (Kargil), earning the Chief of Army Staff Commendation for distinguished service. A trained Interviewing Officer from DIPR, he served as Deputy President of 18 SSB, Allahabad, conducting over 2,000 interviews and selecting more than 320 potential officers. Since taking voluntary retirement in 2013, he has actively mentored and trained defence aspirants. He holds postgraduate degrees in Weapon Systems, Social Work, and an MBA in HR.',
       specialization: 'Personal Interview, Current Affairs, Technical Subjects',
       achievements: 'Trained 200+ successful candidates',
- image: '/images/murali.png',
+      image: '/images/murali.png',
       description: 'Col Murali brings two decades of experience as an Interview Officer. His deep understanding of the interview process and ability to build candidate confidence has made him one of the most sought-after mentors.',
     },
     {
@@ -43,7 +44,7 @@ const About = () => {
       background: "Col Ramakrishnan is a retired Army officer from the Army Educational Corps and an alumnus of the Indian Military Academy, Dehradun. He served in various field formations and held key instructional roles at IMA Dehradun, INI Pune, AEC Training College & Centre Pachmarhi, and ASC Centre & College, Bengaluru. A trained psychologist from the Defence Institute of Psychological Research, he served as Technical Officer and Psychologist at 18 SSB Prayagraj, where he assessed over 1,500 candidates and contributed to the selection of 300+ future officers. Since retiring in 2019 after 30+ years of service, he has actively mentored and trained numerous defence aspirants. He holds a postgraduate degree in Applied Psychology and a bachelor's in Educational Technology.",
       specialization: 'TAT, WAT, SRT, Psychological Assessment',
       achievements: 'Expert in personality development',
- image: '/images/rama.png',
+      image: '/images/rama.png',
       description: 'Col Ramakrishnan specializes in psychological assessment and personality development. His structured approach to psychology tests has helped countless candidates understand and present their true potential.',
     },
     {
@@ -53,7 +54,7 @@ const About = () => {
       background: 'A native of Palakkad, Kerala he is an alumnus of Sainik School Kazhakootam (1988) and the National Defence Academy (78 Hunter, joined 1987). Commissioned into the Corps of EME on 8 June 1991, he holds an M.Tech in Mechanical Engineering, an MBA in HRM, PGDM in Finance, and certifications in Strategic Management and Project Management from IISc Bangalore. A specialist in Armoured and Off-Highway Vehicles, he served extensively in EME units across diverse terrains, focusing on equipment sustenance and maintainability. He is also a qualified personality assessment expert from DIPR and served as a GTO at SSB, assessing over 4,000 candidates. Awarded the COAS Commendation in 2015 for excellence as Director EME Training. He superannuated on 31 July 2024 as Chief Maintainability Engineer, Maintainability Advisory Group No. 6, Avadi.',
       specialization: 'Group Testing Officer, Design & Development of Group Planning Exercise, Progressive Group Task, and Command Task',
       achievements: 'Highest success rate in coaching candidates for SSB preparation',
- image: '/images/anup.png',
+      image: '/images/anup.png',
       description: 'Col Anup Alagarajan is renowned for his expertise in group testing & personality development. His innovative training methods and practical approach to GTO tasks have resulted in exceptional success rates among his students.',
     },
   ];
@@ -100,7 +101,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">About Trinity SSB Mentorship</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Empowering defence aspirants with expert guidance from veteran assessors who have served 
+            Empowering defence aspirants with expert guidance from veteran assessors who have served
             in the Services Selection Boards
           </p>
         </div>
@@ -110,8 +111,8 @@ const About = () => {
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
             <p className="text-xl leading-relaxed max-w-4xl mx-auto">
-              To provide comprehensive, professional and personalized SSB preparation that transforms 
-              aspirants into confident candidates ready to clear the SSB and serve the nation. We bridge the gap between 
+              To provide comprehensive, professional and personalized SSB preparation that transforms
+              aspirants into confident candidates ready to clear the SSB and serve the nation. We bridge the gap between
               aspiration and achievement through expert mentorship and proven training methodologies.
             </p>
           </div>
@@ -153,16 +154,15 @@ const About = () => {
             {mentors.map((mentor, index) => (
               <div
                 key={index}
-                className={`bg-white rounded-2xl shadow-lg overflow-hidden ${
-                  index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                } flex flex-col lg:flex`}
+                className={`bg-white rounded-2xl shadow-lg overflow-hidden ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                  } flex flex-col lg:flex`}
               >
                 <div className="lg:w-1/3 bg-gradient-to-br from-green-600 to-blue-700 p-8 text-white flex flex-col justify-center">
                   <div className="text-center lg:text-left">
- <img src={mentor.image} alt={mentor.name} className="w-24 h-24 rounded-full object-cover mx-auto lg:mx-0 mb-4 border-4 border-white shadow-lg" />
- <h3 className="text-2xl font-bold mb-2">
- {mentor.name}
- </h3>
+                    <img src={mentor.image} alt={mentor.name} className="w-24 h-24 rounded-full object-cover mx-auto lg:mx-0 mb-4 border-4 border-white shadow-lg" />
+                    <h3 className="text-2xl font-bold mb-2">
+                      {mentor.name}
+                    </h3>
                     <p className="text-lg font-semibold text-green-100 mb-2">{mentor.role}</p>
                     <p className="text-green-100">{mentor.experience}</p>
                   </div>
@@ -193,7 +193,7 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Comprehensive Program</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Our 12-day intensive program covers all aspects of SSB preparation with personalized 
+                Our 12-day intensive program covers all aspects of SSB preparation with personalized
                 attention and expert guidance at every step.
               </p>
               <div className="space-y-4">
@@ -258,22 +258,22 @@ const About = () => {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Start Your Journey Today</h2>
             <p className="text-xl mb-8 text-gray-100">
-              Join our proven program and take the first step towards achieving your dream of 
+              Join our proven program and take the first step towards achieving your dream of
               serving in the Indian Defence Forces
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/batches"
+              <Link
+                to="/batches"
                 className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-700 transform hover:scale-105 transition-all duration-200 shadow-xl"
               >
                 View Upcoming Batches
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="bg-white text-green-800 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-200 shadow-xl"
               >
                 Contact Our Team
-              </a>
+              </Link>
             </div>
           </div>
         </div>
