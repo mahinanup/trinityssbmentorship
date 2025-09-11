@@ -44,7 +44,7 @@ const Enroll = () => {
     const message = `Enrollment details: Full Name: ${formData.fullName}, Email: ${formData.email}, Phone: ${formData.phone}, Education: ${formData.education}, Batch: ${batchInfo}, Experience: ${formData.experience}, Motivation: ${formData.motivation}`;
 
     // Replace with your Azure Function URL
-    const azureFunctionUrl = "https://commservicemahin.azurewebsites.net/api/azureCommsService?code=JxEaECSXyqV1fKxR77hpGDyOmKwojVT6oduTMoG5nq1uAzFucpVIxw==";
+    const azureFunctionUrl = "https://trinityssbfunction-bwd7g9ahdyfcezep.eastus2-01.azurewebsites.net/api/azureCommsService?code=v4YlqBmdtmktAa5WkKmQGG-p4EDSJkI80IPeKLLeGbBtAzFueD2TMA==";
 
     fetch(azureFunctionUrl, { // Keep the fetch call
       method: 'POST',
